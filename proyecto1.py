@@ -49,6 +49,9 @@ while game == True:
         print("\n***** Jugador vs. Computadora *****\n")
 
         while (player1_victories < rounds - 1) and (player2_victories < rounds - 1):
+            if played_rounds > rounds:
+                print("\nEmpatados en puntos! Se jugara una ronda mas hasta que un jugador gane 1 punto mas\n")
+                
             player1 = 0
             player2 = 0
             print(f"Ronda {played_rounds}!\n")
@@ -95,6 +98,9 @@ while game == True:
         print("\n***** Jugador vs. Jugador *****\n")
 
         while (player1_victories < rounds - 1) and (player2_victories < rounds - 1):
+            if played_rounds > rounds:
+                print("\nEmpatados en puntos! Se jugara una ronda mas hasta que un jugador gane 1 punto mas\n")
+
             player1 = 0
             player2 = 0
             print(f"Ronda {played_rounds}!\n")
